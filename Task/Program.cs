@@ -28,5 +28,10 @@ string[] CreateArrayOf3Characters(string[] array)   //Метод для созд
     return resultArray;
 }
 
+void ShowArray(string[] array)
+{
+    Write($"[{String.Join(", ", array)}]");
+}
+
 
 
