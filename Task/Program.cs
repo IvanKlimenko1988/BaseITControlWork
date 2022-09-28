@@ -33,5 +33,13 @@ void ShowArray(string[] array)
     Write($"[{String.Join(", ", array)}]");
 }
 
+Clear();
+Write("Введите через пробел массив строк: ");
+string[] startArray = ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries); //При вводе исключаем ошибку двойных и более пробелов.
+
+string[] newArray = CreateArrayOf3Characters(startArray);
+ShowArray(startArray);
+Write(" -> ");
+ShowArray(newArray);
 
 
